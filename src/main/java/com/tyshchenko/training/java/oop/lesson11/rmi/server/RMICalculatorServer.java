@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson11.rmi.server;
 
-import com.tyshchenko.java.training.oop.lesson11.rmi.common.RMIConstants;
+import com.tyshchenko.training.java.oop.lesson11.rmi.common.RMIConstants;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;

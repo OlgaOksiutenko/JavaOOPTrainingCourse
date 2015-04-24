@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson11.rmi.server;
 
-import com.tyshchenko.java.training.oop.lesson11.rmi.common.Calculator;
+import com.tyshchenko.training.java.oop.lesson11.rmi.common.Calculator;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

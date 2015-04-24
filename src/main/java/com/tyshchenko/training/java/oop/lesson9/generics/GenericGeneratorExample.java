@@ -1,13 +1,13 @@
 package com.tyshchenko.training.java.oop.lesson9.generics;
 
-import com.tyshchenko.java.training.oop.lesson9.generics.InterfaceGenericExample.Coffee;
-import com.tyshchenko.java.training.oop.lesson9.generics.InterfaceGenericExample.Generator;
+import com.tyshchenko.training.java.oop.lesson9.generics.InterfaceGenericExample.Coffee;
+import com.tyshchenko.training.java.oop.lesson9.generics.InterfaceGenericExample.Generator;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.IntStream;
 
-import static com.tyshchenko.java.training.oop.lesson9.generics.InterfaceGenericExample.*;
+import static com.tyshchenko.training.java.oop.lesson9.generics.InterfaceGenericExample.*;
 
 /**
  * @author Alexander Tyshchenko.

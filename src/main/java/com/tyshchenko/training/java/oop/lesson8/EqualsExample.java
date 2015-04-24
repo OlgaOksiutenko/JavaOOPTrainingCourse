@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson8;
 
-import static com.tyshchenko.java.training.oop.lesson8.Point2DHashcodeExample.Point2D;
+import static com.tyshchenko.training.java.oop.lesson8.Point2DHashcodeExample.Point2D;
 
 /**
  * @author Alexander Tyshchenko.

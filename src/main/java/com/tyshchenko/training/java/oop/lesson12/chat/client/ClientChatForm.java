@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson12.chat.client;
 
-import com.tyshchenko.java.training.oop.lesson12.chat.common.Message;
+import com.tyshchenko.training.java.oop.lesson12.chat.common.Message;
 
 import javax.swing.*;
 import java.io.File;

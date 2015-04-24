@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson5.io.binary;
 
-import com.tyshchenko.java.training.oop.util.Constants;
+import com.tyshchenko.training.java.oop.util.Constants;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;

@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson6;
 
-import com.tyshchenko.java.training.oop.util.Constants;
+import com.tyshchenko.training.java.oop.util.Constants;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

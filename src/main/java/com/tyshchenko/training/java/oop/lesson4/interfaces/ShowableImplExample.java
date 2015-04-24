@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson4.interfaces;
 
-import static com.tyshchenko.java.training.oop.lesson4.interfaces.Showable.Message;
+import static com.tyshchenko.training.java.oop.lesson4.interfaces.Showable.Message;
 
 /**
  * @author Alexander Tyshchenko.

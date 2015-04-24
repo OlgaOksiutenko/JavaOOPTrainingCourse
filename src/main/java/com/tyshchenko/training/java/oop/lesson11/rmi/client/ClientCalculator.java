@@ -1,7 +1,7 @@
 package com.tyshchenko.training.java.oop.lesson11.rmi.client;
 
-import com.tyshchenko.java.training.oop.lesson11.rmi.common.Calculator;
-import com.tyshchenko.java.training.oop.lesson11.rmi.common.RMIConstants;
+import com.tyshchenko.training.java.oop.lesson11.rmi.common.Calculator;
+import com.tyshchenko.training.java.oop.lesson11.rmi.common.RMIConstants;
 
 import java.net.UnknownHostException;
 import java.rmi.NotBoundException;

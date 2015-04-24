@@ -1,6 +1,6 @@
 package com.tyshchenko.training.java.oop.lesson12.chat.server;
 
-import com.tyshchenko.java.training.oop.lesson12.chat.common.Message;
+import com.tyshchenko.training.java.oop.lesson12.chat.common.Message;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
