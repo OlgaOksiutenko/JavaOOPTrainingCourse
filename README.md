@@ -6,7 +6,7 @@ These are training course materials for Java OOP Programming.[Course materials] 
 * **Lesson2**. Inheritance and Encapsulation.
 * **Lesson3**. Polymorphism. InstanceOf keyword. Exceptions (Checked, Unchecked, Error). Writing own exceptions.
 * **Lesson4**. Interfaces(functional interfaces, default methods). Event-driven programming. Comparing objects (Comparator vs Comparable).
-* **Lesson5**. I/O. Byte stream. Buffered streams. Character streams. Data streams. File system (File, RandomAccessFile).
+* **Lesson5**. I/O. Byte streams. Buffered streams. Character streams. Data streams. File system (File, RandomAccessFile).
 * **Lesson6**. Introduction to Multi-Threading programming. The class Thread(sleep, join, interrupt). The interface Runnable. Thread priorities.  
 * **Lesson7**. Thread synchronization and race conditions. Wait and notify. Volatile keyword. Deadlock situations.   
 * **Lesson8**. Java serialization. Java cloning. ToString. Enums. Finalization in java. Hashcode and equals. java.lang.Object.
