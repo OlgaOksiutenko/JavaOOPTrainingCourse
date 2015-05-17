@@ -4,7 +4,7 @@
 These are training course materials for Java OOP Programming.[Course materials] (https://drive.google.com/open?id=0BybnNyNT35v5fmZlWnc4Qkh3VldGOUhmbWJQbGRVX2lKYkJNV1g3dnpwTUhnOXFoSFRXT28&authuser=0)
 
 #### Contents
-* **Lesson1**. Introductions to Java Object Oriented Programming. Java access modifiers. Java Keywords (static, final, strictfp). Inner and Nested classes. Abstract classes.
+* **Lesson1**. Introduction to Java Object Oriented Programming. Access modifiers. Java Keywords (static, final, strictfp). Inner and Nested classes. Abstract classes.
 * **Lesson2**. Inheritance and Encapsulation.
 * **Lesson3**. Polymorphism. InstanceOf keyword. Exceptions (Checked, Unchecked, Error). Writing own exceptions.
 * **Lesson4**. Interfaces(functional interfaces, default methods). Event-driven programming. Comparing objects (Comparator vs Comparable).
