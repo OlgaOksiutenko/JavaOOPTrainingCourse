@@ -6,7 +6,7 @@ package com.tyshchenko.training.java.oop.lesson2.car;
 public class CarExample {
     public static void main(String[] args) {
         Car bmw = new Car("BMW");
-        Car ferrari = new Car("Ferrari", 20000);
+        Car ferrari = new Car("Ferrari", 20000, 2);
 
         System.out.println(bmw);
 
