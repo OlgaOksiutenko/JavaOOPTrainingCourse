@@ -3,7 +3,7 @@ package com.tyshchenko.training.java.oop.lesson3;
 /**
  * @author Alexander Tyshchenko.
  */
-public class InstanceOfExample {
+public class InstanceOfExample1 {
 
     public static void main(String[] args) {
         Dog dog = new Dog();

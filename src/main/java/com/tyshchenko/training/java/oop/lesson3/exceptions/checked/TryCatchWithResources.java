@@ -16,35 +16,50 @@ public class TryCatchWithResources {
 
     private static void printFile() throws IOException {
         InputStream input = null;
+        BufferedInputStream bufferedInput = null;
 
         try {
             input = new FileInputStream(filePath);
+            bufferedInput = new BufferedInputStream(input);
 
-            int data = input.read();
-            while(data != -1) {
+            int data;
+
+            do {
+                data = bufferedInput.read();
                 System.out.print((char) data);
-                data = input.read();
             }
+            while(data != -1);
             System.out.println();
         } finally {
+            if (bufferedInput != null) {
+                try {
+                    bufferedInput.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
             if(input != null){
-                input.close();
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
 
     private static void printFileJava7() {
 
-        try(
-                FileInputStream input = new FileInputStream(filePath);
-                BufferedInputStream bufferedInput = new BufferedInputStream(input);
-        ) {
+        try(FileInputStream input = new FileInputStream(filePath);
+            BufferedInputStream bufferedInput = new BufferedInputStream(input)) {
 
-            int data = bufferedInput.read();
-            while(data != -1) {
-                System.out.print((char) data);
+            int data;
+
+            do {
                 data = bufferedInput.read();
+                System.out.print((char) data);
             }
+            while(data != -1);
         } catch (IOException e) {
             e.printStackTrace();
         }
