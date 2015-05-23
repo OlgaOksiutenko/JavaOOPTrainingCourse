@@ -13,11 +13,21 @@ public class Rectangle extends Figure {
         super(name);
         this.a = a;
         this.b = b;
+        countSquere();
     }
 
     @Override
-    public void countSquere() {
+    public double countSquere() {
      S = a*b;
-        System.out.println("Squere of Rectangle = "+ S);
+        return S;
+    }
+
+    @Override
+    public int compareTo(Figure figure) {
+        if (S < figure.countSquere()) return -1;
+        else if (S == figure.countSquere()) return 0;
+        else if (S > figure.countSquere()) return 1;
+        else
+            return 0;
     }
 }

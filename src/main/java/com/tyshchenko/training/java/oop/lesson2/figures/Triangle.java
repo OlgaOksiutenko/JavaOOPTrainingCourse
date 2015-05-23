@@ -16,10 +16,11 @@ public class Triangle extends Figure {
         this.a = a;
         this.c = c;
         this.b = b;
+        countSquere();
     }
 
     @Override
-    public void countSquere() {
+    public double countSquere() {
         S = 0;
      if (a==b && a==c){
        S = a*a*Math.sqrt(3)/4;
@@ -29,6 +30,17 @@ public class Triangle extends Figure {
          S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
 
      }
-        System.out.println("Triange squere = "+S);
+        return S;
+
     }
-}
+
+    @Override
+    public int compareTo(Figure figure) {
+        if (S < figure.countSquere()) return -1;
+        else if (S == figure.countSquere()) return 0;
+        else if (S > figure.countSquere()) return 1;
+        else
+            return 0;
+    }
+    }
+

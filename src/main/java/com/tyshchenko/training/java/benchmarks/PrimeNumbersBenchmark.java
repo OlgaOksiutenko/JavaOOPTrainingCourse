@@ -1,3 +1,4 @@
+/*
 package com.tyshchenko.training.java.benchmarks;
 
 import org.openjdk.jmh.annotations.*;
@@ -8,9 +9,11 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.TimeUnit;
 
+*/
 /**
  * @author Alexander Tyshchenko.
- */
+ *//*
+
 @OutputTimeUnit(value = TimeUnit.MICROSECONDS)
 public class PrimeNumbersBenchmark {
 
@@ -56,3 +59,4 @@ public class PrimeNumbersBenchmark {
     }
 
 }
+*/

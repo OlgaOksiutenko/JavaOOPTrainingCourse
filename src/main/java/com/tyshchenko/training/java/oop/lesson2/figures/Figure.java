@@ -3,7 +3,7 @@ package com.tyshchenko.training.java.oop.lesson2.figures;
 /**
  * Created by ol on 17.05.2015.
  */
-public abstract class Figure {
+public abstract class Figure implements Comparable<Figure> {
 
     private String name;
     private double side;
@@ -11,6 +11,7 @@ public abstract class Figure {
 
 public Figure(String name){}
 
-    public abstract void countSquere();
+    public abstract double countSquere();
+
 
 }

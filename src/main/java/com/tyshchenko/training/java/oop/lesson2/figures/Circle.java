@@ -11,11 +11,21 @@ public class Circle extends Figure {
     public Circle(String name, double r) {
         super(name);
         this.r = r;
+        countSquere();
     }
 
     @Override
-    public void countSquere() {
+    public double countSquere() {
       S = pi*r*r;
-        System.out.println("Squere of Circle = "+S);
+        return S;
+    }
+
+    @Override
+    public int compareTo(Figure figure) {
+        if (S < figure.countSquere()) return -1;
+        else if (S == figure.countSquere()) return 0;
+        else if (S > figure.countSquere()) return 1;
+        else
+            return 0;
     }
 }
