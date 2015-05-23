@@ -1,4 +1,4 @@
-package com.tyshchenko.training.java.oop.lesson5.io;
+package com.tyshchenko.training.java.oop.lesson5;
 
 import com.tyshchenko.training.java.oop.util.Constants;
 

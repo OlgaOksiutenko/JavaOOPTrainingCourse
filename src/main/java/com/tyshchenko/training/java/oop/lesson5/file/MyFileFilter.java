@@ -1,4 +1,4 @@
-package com.tyshchenko.training.java.oop.lesson5.io.file;
+package com.tyshchenko.training.java.oop.lesson5.file;
 
 import java.io.File;
 import java.io.FilenameFilter;
