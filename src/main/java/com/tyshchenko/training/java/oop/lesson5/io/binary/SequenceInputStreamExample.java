@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.SequenceInputStream;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
@@ -18,11 +18,12 @@ public class SequenceInputStreamExample {
 
     public static void main(String[] args) {
         int c;
-        List<String> files = new ArrayList<>();
+        List<String> files = Arrays.asList(
+                Constants.FILE_PATH_LESSON_5 + "/file1.txt",
+                Constants.FILE_PATH_LESSON_5 + "/file2.txt",
+                Constants.FILE_PATH_LESSON_5 + "/file3.txt"
+        );
 
-        files.add(Constants.FILE_PATH_LESSON_5 + "/file1.txt");
-        files.add(Constants.FILE_PATH_LESSON_5 + "/file2.txt");
-        files.add(Constants.FILE_PATH_LESSON_5 + "/file3.txt");
         InputStreamEnumerator ise = new InputStreamEnumerator(files);
         InputStream input = new SequenceInputStream(ise);
 
