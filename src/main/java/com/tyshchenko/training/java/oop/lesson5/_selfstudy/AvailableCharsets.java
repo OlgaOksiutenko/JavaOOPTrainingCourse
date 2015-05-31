@@ -1,4 +1,4 @@
-package com.tyshchenko.training.java.oop.lesson5.io._selfstudy;
+package com.tyshchenko.training.java.oop.lesson5._selfstudy;
 
 import java.nio.charset.Charset;
 import java.util.SortedMap;
