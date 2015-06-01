@@ -12,4 +12,9 @@ public interface Constants {
     String FILE_PATH_LESSON_10 = "src/main/resources/oop/lesson10";
     String FILE_PATH_LESSON_11 = "src/main/resources/oop/lesson11";
 
+
+    String FILE_PATH_HOMEWORK_05 = "src/main/resources/oop/homeWork5";
+
+
+
 }

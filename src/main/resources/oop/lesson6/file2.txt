@@ -1,6 +1,6 @@
-package com.tyshchenko.training.java.oop.lesson6;
+package com.tyshchenko.java.training.oop.lesson6;
 
-import com.tyshchenko.training.java.oop.util.Constants;
+import com.tyshchenko.java.training.oop.util.Constants;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -11,10 +11,7 @@ import java.io.RandomAccessFile;
 public class CopyFileWithProgressExample {
 
     public static void main(String[] args) {
-        Copy c = new Copy(
-                Constants.FILE_PATH_LESSON_6 + "/file1.txt",
-                Constants.FILE_PATH_LESSON_6 + "/file2.txt",
-                new Progress());
+        Copy c = new Copy(Constants.FILE_PATH_LESSON_6 + "/file1.txt", Constants.FILE_PATH_LESSON_6 + "/file2.txt", new Progress());
         c.start();
     }
 
@@ -27,20 +24,18 @@ public class CopyFileWithProgressExample {
 
         @Override
         public void update(double p) {
-            System.out.println(String.format("%.2f",p)+"%");
+            final long rounded = Math.round(p);
+            long add = rounded - n;
+            n = rounded;
 
-//            final long rounded = Math.round(p);
-//            long add = rounded - n;
-//            n = rounded;
-//
-//            while (add-- > 0)
-//                System.out.print('.');
+            while (add-- > 0)
+                System.out.print('.');
         }
     }
 
     public final static class Copy extends Thread {
 
-        private static final int BLOCK_SIZE = 24;
+        private static final int BLOCK_SIZE = 1024;
 
         private String src;
         private String destination;
@@ -62,13 +57,14 @@ public class CopyFileWithProgressExample {
         }
 
         private void copyFile() throws IOException {
-
-            try (RandomAccessFile in = new RandomAccessFile(src, "r")) {
+            RandomAccessFile in = new RandomAccessFile(src, "r");
+            try {
                 final double onePercent = in.length() / 100.0; // !!!
 
                 counter = 0;
 
-                try (RandomAccessFile out = new RandomAccessFile(destination, "rw");) {
+                RandomAccessFile out = new RandomAccessFile(destination, "rw");
+                try {
                     byte[] buf = new byte[BLOCK_SIZE];
                     int r;
 
@@ -80,7 +76,6 @@ public class CopyFileWithProgressExample {
 
                             if (progress != null)
                                 progress.update(counter / onePercent);
-
                             try {
                                 Thread.sleep(1000);
                             } catch (InterruptedException e) {
@@ -88,7 +83,11 @@ public class CopyFileWithProgressExample {
                             }
                         }
                     } while (r > 0);
+                } finally {
+                    out.close();
                 }
+            } finally {
+                in.close();
             }
         }
     }

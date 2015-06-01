@@ -1,0 +1,5 @@
+FileName: FileInputStreamExample.txt| FilePath: src\main\resources\oop\lesson5\FileInputStreamExample.txt| FileDate: Mon May 18 23:36:53 MSK 2015| 
+FileName: FileOutputStreamExample.txt| FilePath: src\main\resources\oop\lesson5\FileOutputStreamExample.txt| FileDate: Mon May 18 23:36:53 MSK 2015| 
+FileName: FileOutputStreamExample1.txt| FilePath: src\main\resources\oop\lesson5\FileOutputStreamExample1.txt| FileDate: Mon May 18 23:36:53 MSK 2015| 
+FileName: FileOutputStreamExample2.txt| FilePath: src\main\resources\oop\lesson5\FileOutputStreamExample2.txt| FileDate: Mon May 18 23:36:53 MSK 2015| 
+FileName: FileOutputStreamExample3.txt| FilePath: src\main\resources\oop\lesson5\FileOutputStreamExample3.txt| FileDate: Mon May 18 23:36:53 MSK 2015| 

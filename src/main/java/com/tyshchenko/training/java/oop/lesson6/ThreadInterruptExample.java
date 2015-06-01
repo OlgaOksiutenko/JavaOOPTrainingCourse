@@ -26,9 +26,10 @@ public class ThreadInterruptExample {
         @Override
         public void run() {
             int x = 0;
-
+            int Min = 1;
+            int Max = 20;
             while (!isInterrupted()) {
-                System.out.println(getName() + " : " + x++);
+                System.out.println("Random number from 1 to 20 is  " + (Min+(int)(Math.random()*((Max - Min)+1))) + " : " + x++);
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
