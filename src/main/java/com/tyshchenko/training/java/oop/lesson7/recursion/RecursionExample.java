@@ -13,9 +13,13 @@ public class RecursionExample {
     public static void main(String[] args) {
         final String path = "src/main/java";
         List<String> list = new ArrayList<>();
-
-        try {
+       /* try {
             listAll(path, list);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+        try{
+            fileFilter(path, list);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,4 +47,33 @@ public class RecursionExample {
         }
     }
 
-}
+    private static void fileFilter(String path, List<String> res) throws IOException {
+        File dir = new File(path);
+        File[] list = dir.listFiles();
+
+
+        for (File f : list) {
+            if (f.isFile()) {
+                if (f.getName().length() >= 5 && f.getName().charAt(1) == 'a') {
+
+                        res.add("File/dir name has more then 5 symbols and has second letter 'a' : " + f.getCanonicalPath());
+
+                }
+            }
+        else {
+                if (f.getName().length() >= 5 && f.getName().charAt(1) == 'a') {
+
+                        res.add("File/dir name has more then 5 symbols and has second letter 'a' : " + f.getCanonicalPath());
+
+                                }
+                fileFilter(f.getCanonicalPath(), res);
+                            }
+                }
+
+            }
+        }
+
+
+
+
+
